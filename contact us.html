@@ -5,6 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="contact us.css">
+<script>
+function validateForm() {
+    var firstName = document.getElementById("firstName").value;
+    var lastName = document.getElementById("lastName").value;
+    var email = document.getElementById("email").value;
+    var mobileNumber = document.getElementById("mobileNumber").value;
+    var messageBox = document.getElementById("messageBox").value;
+
+    var emailRegex = /^\S+@\S+\.\S+$/;
+    var mobileRegex = /^\d{10}$/;
+
+    if (firstName.trim() === "") {
+        alert("Please enter your first name.");
+        return false;
+    }
+
+    if (lastName.trim() === "") {
+        alert("Please enter your last name.");
+        return false;
+    }
+
+    if (!emailRegex.test(email)) {
+        alert("Please enter a valid email address.");
+        return false;
+    }
+
+    if (!mobileRegex.test(mobileNumber)) {
+        alert("Please enter a valid 10-digit mobile number.");
+        return false;
+    }
+
+    if (messageBox.trim() === "") {
+        alert("Please enter a message.");
+        return false;
+    }
+
+    return true; // Form submission allowed
+}
+</script>
 </head>
 <body>
     <nav class="navbar-one flex">
@@ -41,15 +80,15 @@
     </nav>
     <div class="c1">
     <div class="container0">
-        <form>
+        <form id="myForm" action="index.html"  onsubmit="return validateForm()">
             <h1>Contact Us From</h1>
-            <input type="text" id="Firstname" placeholder="First Name" required>
-            <input type="text" id="lastname" placeholder="Last Name" required>
-            <input type="Email" id="Email" placeholder="Email" required>
-            <input type="number" id="mobile" placeholder="Mobile" required>
+            <input type="text" id="firstName" placeholder="First Name">
+            <input type="text" id="lastName" placeholder="Last Name">
+            <input type="Email" id="email" placeholder="Email">
+            <input type="number" id="mobileNumber" placeholder="Mobile">
             <h4>Type Your Message Here...</h4>
-            <textarea required></textarea>
-            <input type="submit" value="send" id="button">
+            <textarea></textarea>
+            <input id="messageBox" type="submit" value="Submit" onclick="validateForm()">
         </form>
     </div>
     </div>
