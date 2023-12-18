@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="book.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <form action="index.html"></form>
+    <nav class="navbar-one flex">
+        <div class="left flex">
+            <div class="Address">
+                <i class="fa fa-"></i>
+                <h3>R.K. Universtiy</h3>
+            </div>
+            <div class="call">
+                <i class="fa fa-phone-alt"></i>
+                <h3>Mon - Fri : 09.00 AM - 09.00 PM</h3>
+            </div>
+        </div>
+        <div class="right flex">
+            <div class="call">
+                <i class="fa fa-phone"></i>
+                <h3>+91 9316311431</h3>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar-secound flex">
+        <div class="logo"><a href="index.html">
+            <img src="logo.png" ></a>
+        </div>
+        <ul class="flex1">
+            <li><a id="a1" href="index.html">Home</a></li>
+            <li><a id="a1" href="Doctor.html">Doctor</a></li>
+            <li><a id="a1" href="Service.html">Service</a></li>
+            <li><a id="a1" href="contact us.html">Contact us</a></li>
+            <li><a id="a1" href="Login.html">Login</a></li>
+            <button class="btn"><a href="book.html">Book Appointment</a></button>
+        </ul>
+    </nav>
+        <div class="container0">
+          <form id="myForm" action="index.html"  onsubmit="return validateForm()">
+              <h1>Book Appointment From</h1>
+              <input type="text" id="fullName" placeholder="Fullname"><br><br>
+          
+              <input type="email" id="email" placeholder="Email"><br><br>
+          
+              <input type="number" id="mobileNumber" placeholder="Mobile Number"><br><br>
+          
+              <input type="number" id="age" placeholder="Age"><br><br>
+          
+              <label for="gender">Gender:</label>
+              <input type="radio" id="male" name="gender" value="male">
+              <label for="male">Male</label>
+              <input type="radio" id="female" name="gender" value="female">
+              <label for="female">Female</label><br><br>
+          
+              <label for="Services">Services:</label>
+              <select id="Services" name="Services">
+                  <option value="#">--Please choose an option--</option>
+                  <option value="Robotic Surgery">Robotic Surgery</option>
+                  <option value="Neurology">Neurology</option>
+                  <option value="Pulmonary">Pulmonary</option>
+                  <option value="Orthopedics">Orthopedics</option>
+              </select><br><br>
+          
+              <label for="address">Address:</label><br>
+              <textarea id="address" name="address" rows="4" cols="30"></textarea><br><br>
+          
+              <input id="submit" type="submit" value="Submit" onclick="validateForm()">
+          </form>
+        </div>
+
+      <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Address</h4>
+                    <ul>
+                        <li><a href="#">R.K. university </a></li>
+                        <li><a href="#">+91 9316311431</a></li>
+                        <li><a href="#">tkardani445@rku.ac.in</a></li>
+                        <li><a href="#">Open-Close=08:00AM-8:30PM</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="Service.html">Robotic Surgery</a></li>
+                        <li><a href="Service.html">Neurology</a></li>
+                        <li><a href="Service.html">Pulmonary</a></li>
+                        <li><a href="Service.html">Orthopedics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="contact us.html">Contect us</a></li>
+                        <li><a href="Login.html">Login</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

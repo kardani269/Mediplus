@@ -1,0 +1,184 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor</title>
+    <link rel="stylesheet" href="Doctor.css">
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <nav class="navbar-one flex">
+        <div class="left flex">
+            <div class="Address">
+                <i class="fa fa-"></i>
+                <h3>R.K. Universtiy</h3>
+            </div>
+            <div class="call">
+                <i class="fa fa-phone-alt"></i>
+                <h3>Mon - Fri : 09.00 AM - 09.00 PM</h3>
+            </div>
+        </div>
+        <div class="right flex">
+            <div class="call">
+                <i class="fa fa-phone"></i>
+                <h3>+91 9316311431</h3>
+            </div>
+        </div>
+    </nav>
+<div>
+    <nav class="navbar-secound flex">
+        <div class="logo">
+            <img src="logo.png">
+        </div>
+        <ul class="flex1">
+            <li><a id="a1" href="index.html">Home</a></li>
+            <li><a id="a1" href="Doctor.html">Doctor</a></li>
+            <li><a id="a1" href="Service.html">Service</a></li>
+            <li><a id="a1" href="contact us.html">Contact us</a></li>
+            <li><a id="a1" href="Login.html">Login</a></li>
+            <button class="btn"><a href="book.html">Book Appointment</a></button>
+        </ul>
+    </nav>
+    <div class="slide-container">
+        <div class="slide-content">
+            <div class="slide-wrapper">
+                <div class="card ">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img class="card-img" height="150px"
+                             width="150px" src="team-2.jpg">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Dr.Arjun</h2>
+                        <p class="description">Dr.Arjun Master in Robotic Surgery.He is our NO:-1 Doctor in Robotic Surgery.</p>
+                        <button class="button" id="btn1">View More</button> 
+                        
+                    </div>
+                </div>
+                <div class="card ">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img class="card-img" height="150px"
+                             width="150px" src="team-1.jpg">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Dr.Rudisha</h2>
+                        <p class="description">Dr.Rudisha Master in Neurology.she is our NO:-1 Doctor in Neurology.</p>
+                        <button class="button" id="btn2">View More</button>  
+                        
+                    </div>
+                </div>  <div class="card ">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img class="card-img" height="150px"
+                             width="150px" src="team-4.jpg">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Dr.Umang</h2>
+                        <p class="description">Dr.Umang Master in Pulmonary.He is our NO:-1 Doctor in Pulmonary.</p>
+                        <button class="button" id="btn3">View More</button> 
+                        
+                    </div>
+                </div>  <div class="card ">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img class="card-img" height="150px"
+                             width="150px" src="team-3.jpg">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Dr.Riddhi</h2>
+                        <p class="description">Dr.Riddhi Master in Orthopedics.she is our NO:-1 Doctor in Orthopedics.</p>
+                        <button class="button" id="btn4">View More</button> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Address</h4>
+                    <ul>
+                        <li><a href="#">R.K. university </a></li>
+                        <li><a href="#">+91 9316311431</a></li>
+                        <li><a href="#">tkardani445@rku.ac.in</a></li>
+                        <li><a href="#">Open-Close=08:00AM-8:30PM</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="Service.html">Robotic Surgery</a></li>
+                        <li><a href="Service.html">Neurology</a></li>
+                        <li><a href="Service.html">Pulmonary</a></li>
+                        <li><a href="Service.html">Orthopedics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="contact us.html">Contect us</a></li>
+                        <li><a href="Login.html">Login</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="pop">
+        <br><br>
+        <br>
+        <h3>This Doctors are Highly Qualified for our Special Treatments</h3>
+        <button id="btn0">Ok</button>
+     </div>
+  
+     <script>
+        $(document).ready(function(){
+  
+           $('#btn1').on({
+              "click":function(){
+                 $('.pop').css({"transform":"scale(1)"});
+                 $('.pop').css({"visibility":"visible"});
+              }
+           });
+          
+           $('#btn2').on({
+              "click":function(){
+                 $('.pop').css({"transform":"scale(1)"});
+                 $('.pop').css({"visibility":"visible"});
+              }
+           });
+           
+           $('#btn3').on({
+              "click":function(){
+                 $('.pop').css({"transform":"scale(1)"});
+                 $('.pop').css({"visibility":"visible"});
+              }
+           });
+          
+           $('#btn4').on({
+              "click":function(){
+                 $('.pop').css({"transform":"scale(1)"});
+                 $('.pop').css({"visibility":"visible"});
+              }
+           });
+        })
+          
+    </script>
+  
+
+
+</body>
+</html>

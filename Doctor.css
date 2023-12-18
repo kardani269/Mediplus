@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #c4bfc4;
+}
+nav{
+    padding: 0 50px;
+    width: 100%;
+}      
+h3{
+    font-weight: lighter;
+}  
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+.navbar-one{
+    background-color: #D9D9D9;
+    color: black;
+    height: 40px;
+    cursor: pointer;
+}
+.left > div + div,
+.right >div{
+    margin-left: 40px;
+}
+.left > div:hover,
+.right >div:hover{
+    transition: all 0.5s;
+}
+
+.navbar-secound{
+    background-color: #67B9C4;;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    
+}
+li{
+    font-weight: 300;
+    list-style: none;
+}
+a:hover{
+   color: rgb(0, 166, 255);
+}
+#a1{
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 20px;
+    color: black;
+}
+a{
+    text-decoration: none;
+}
+.btn{
+    margin: 10px;
+    padding: 10px;
+    font-size: medium;
+    border-radius: 5px;
+    background-color: #244ec2a6;
+    box-shadow: 0 8px 16px 0 rgb(0, 192, 245), 0 6px 20px 0 rgb(49, 170, 168);
+}
+.btn:hover{
+    background-color: rgb(14, 23, 185);
+}
+.slide-container{
+    max-width: 1445px;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    background-color: grey;
+    padding: 40px 0;
+}
+.slide-content{
+    margin: 0 40px;
+}
+.card{
+    margin-left: 15px;
+    width: 320px;
+    border-radius: 0 25px 0 25px;
+    background-color: #fff;
+    display: inline-block;
+}
+.image-content,
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 14px 14px;
+}
+.image-content{
+    position: relative;
+    row-gap: 5px;  
+    padding: 25px 0;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #4070F4;
+    border-radius: 0 25px 0 25px;
+}
+.overlay::before,
+.overlay::after{
+    content: '';
+    position: absolute ;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #4070F4;
+}
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #fff;
+}
+.card-image{
+    position: relative;
+    border-radius: 50%;
+    background: #fff;
+    padding: 3px;
+}
+.card-image .card-img{
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #4070F4;
+}
+.name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+.description{
+    padding-top: 10px;
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+}
+.button{
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: #4070F4;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transform: all 0.3s ease;
+}
+.button:hover{
+    background-color: #265df2;
+}
+.footer{
+	background-color: #458d73;
+    padding: 50px;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer-col{
+    margin-left: 100px;
+    margin-right: 110px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #202020;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+
+
+
+
+
+
+
+
+.pop{
+    height: 240px;
+    width: 300px;
+    padding: 10px;
+    background: white;
+    transform: scale(0.1);
+    transition: .5s;
+    visibility: hidden;
+    position: absolute;
+    top: 250px;
+    left: 600px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 20px black;
+  } 
+  .pop img{
+    width: 200px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+  }
+  .pop h3{
+    padding-left: 15px;
+    padding-right: 15px;
+  } 
+  #btn0{
+    height: 30px;
+    width: 70px;
+    background-color: #050401;
+    color: white;
+    margin-top: 10px;
+    border: none;
+    border-radius: 3px;
+  }
