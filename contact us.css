@@ -117,8 +117,8 @@ a{
 .container0 form input::placeholder{
     color: #ddd;
 }
-.container0 form #lastname,
-.container0 form #mobile{
+.container0 form #lastName,
+.container0 form #mobileNumber{
     margin-left: 20px; 
 }
 .container0 form h4{
